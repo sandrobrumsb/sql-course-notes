@@ -5,7 +5,11 @@
 ### 3. Executar o container:
 ```sh
 docker pull mysql:latest
+```
+```
 docker volume create mini-curso-sql-dados
+```
+```
 docker run -d --name mini-curso-sql \
   -e MYSQL_ROOT_PASSWORD=sql \
   -p 3306:3306 \
